@@ -58,7 +58,7 @@ methods:{
 
     async fetchAPI() {
       let pages = []
-      let pokemons = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
+      let pokemons = await fetch('https://pokeapi.co/api/v2/pokemon?limit=150')
           .then(res => res.json())
       for (let i=0; i<pokemons.results.length; i++){
         this.image(pokemons.results[i].url);
